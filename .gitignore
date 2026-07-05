@@ -1,0 +1,5 @@
+sessions.json
+memory.json
+.DS_Store
+*.pyc
+__pycache__/
