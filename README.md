@@ -41,7 +41,7 @@
                    │
       ┌────────────┼────────────┐
       ▼            ▼            ▼
-  LM Studio    DuckDuckGo    macOS Shell
+  LM Studio    DuckDuckGo    终端 Shell
   (localhost    (ddgs)      (subprocess)
    :1234)
 ```
@@ -60,11 +60,11 @@
 
 ```bash
 # 1. 克隆仓库
-git clone https://github.com/<your-username>/mini-agent.git
+git clone https://github.com/LoadingVirus/mini-agent.git
 cd mini-agent
 
 # 2. 安装依赖
-pip install -r requirements.txt --break-system-packages
+pip install ddgs --break-system-packages
 
 # 3. 启动 LM Studio，加载模型（如 Gemma 4 E4B），端口 1234
 
@@ -99,14 +99,10 @@ LM_STUDIO = "http://localhost:1234/v1" # LM Studio API
 
 ```
 mini-agent/
-├── mini_agent.py          # 主程序（Python + 内嵌 HTML/JS）
-├── agent_search.py         # 早期 CLI 原型
-├── mini_harness.py         # Agent 框架实验（L/T/C/S/E/V 六组件）
-├── PRD-v3.0.md             # 产品需求文档
-├── 2026-06-23-MiniHarness-*.md  # 架构分析文档
-├── sessions.example.json   # 会话存储示例
-├── requirements.txt
-└── README.md
+├── mini_agent.py      # 主程序（Python + 内嵌 HTML/JS）
+├── README.md          # 项目说明
+├── requirements.md    # 依赖文档
+└── .gitignore         # 排除规则
 ```
 
 ---
